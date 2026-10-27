@@ -434,3 +434,54 @@ body.light-theme #theme-toggle {
   color: #FFFFFF;
   border-color: #1769AA;
 }
+/* Dark theme */
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page-bg: #0B1026;
+  --card-bg: #151D3B;
+  --text-main: #FFFFFF;
+  --text-muted: #B8C2E0;
+  --line-color: #263153;
+}
+
+/* Light theme */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --page-bg: #F5F7FC;
+  --card-bg: #FFFFFF;
+  --text-main: #151D3B;
+  --text-muted: #35415F;
+  --line-color: #DCE3F0;
+}
+
+/* Apply theme colors */
+html,
+body {
+  background-color: var(--page-bg);
+  color: var(--text-main);
+}
+
+header,
+nav,
+main,
+section,
+article,
+footer,
+form {
+  color: var(--text-main);
+}
+
+p,
+label,
+small {
+  color: var(--text-muted);
+}
+
+article,
+input,
+textarea {
+  background-color: var(--card-bg);
+  color: var(--text-main);
+  border-color: var(--line-color);
+}
