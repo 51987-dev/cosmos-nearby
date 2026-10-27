@@ -109,5 +109,30 @@
     </div>
   <p>Responsive design for desktop and mobile devices.</p>
   </footer>
+  <script>
+  const themeButton = document.getElementById("theme-toggle");
+
+  function setTheme(theme) {
+    const isLight = theme === "light";
+
+    document.body.classList.toggle("light-theme", isLight);
+
+    themeButton.textContent = isLight
+      ? "🌙 Тёмная тема"
+      : "☀️ Светлая тема";
+
+    localStorage.setItem("cosmos-theme", theme);
+  }
+
+  themeButton.addEventListener("click", () => {
+    const isLight = document.body.classList.contains("light-theme");
+
+    setTheme(isLight ? "dark" : "light");
+  });
+
+  const savedTheme = localStorage.getItem("cosmos-theme");
+
+  setTheme(savedTheme || "dark");
+</script>
 </body>
 </html>
