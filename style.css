@@ -369,3 +369,68 @@ h3 {
   }
 }
 /* Cosmos Nearby: responsive design for mobile and desktop */
+/* Theme switch button */
+#theme-toggle {
+  padding: 10px 16px;
+  border: 1px solid #7CCEFF;
+  border-radius: 12px;
+  background: #151D3B;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+#theme-toggle:hover {
+  opacity: 0.85;
+}
+
+/* Light theme */
+body.light-theme {
+  background-color: #F5F7FC !important;
+  color: #35415F;
+}
+
+body.light-theme header,
+body.light-theme nav,
+body.light-theme main,
+body.light-theme section,
+body.light-theme article,
+body.light-theme footer {
+  color: #35415F;
+}
+
+body.light-theme header,
+body.light-theme footer {
+  background-color: #FFFFFF;
+}
+
+body.light-theme section,
+body.light-theme article {
+  background-color: #FFFFFF;
+}
+
+body.light-theme h1,
+body.light-theme h2,
+body.light-theme h3 {
+  color: #151D3B;
+}
+
+body.light-theme p,
+body.light-theme li,
+body.light-theme label {
+  color: #35415F;
+}
+
+body.light-theme input,
+body.light-theme textarea {
+  background-color: #FFFFFF;
+  color: #151D3B;
+  border-color: #DCE3F0;
+}
+
+body.light-theme #theme-toggle {
+  background-color: #1769AA;
+  color: #FFFFFF;
+  border-color: #1769AA;
+}
